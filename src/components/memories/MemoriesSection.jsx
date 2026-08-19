@@ -262,7 +262,7 @@ function MemoriesSection() {
   return (
     <section
       id="memories"
-      className="relative overflow-hidden bg-[#050308] px-6 py-28 sm:py-36"
+      className="relative overflow-hidden px-6 py-28 sm:py-36"
     >
       <div className="mx-auto w-full max-w-6xl">
         {/* Heading */}

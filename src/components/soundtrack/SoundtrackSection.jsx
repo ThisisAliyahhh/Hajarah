@@ -217,7 +217,6 @@ function SoundtrackSection() {
       className="
         relative
         overflow-hidden
-        bg-[#050308]
         px-6
         py-28
         sm:py-36

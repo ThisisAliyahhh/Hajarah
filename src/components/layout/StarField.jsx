@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-const stars = Array.from({ length: 70 }, (_, index) => ({
+const stars = Array.from({ length: 160 }, (_, index) => ({
   id: index,
   left: Math.random() * 100,
   top: Math.random() * 100,
@@ -11,7 +11,16 @@ const stars = Array.from({ length: 70 }, (_, index) => ({
 
 function StarField() {
   return (
-    <div className="pointer-events-none absolute inset-0 -z-0 overflow-hidden">
+    <div
+      className="
+        pointer-events-none
+        fixed
+        inset-0
+        z-0
+        overflow-hidden
+      "
+      aria-hidden="true"
+    >
       {stars.map((star) => (
         <motion.span
           key={star.id}
@@ -23,7 +32,7 @@ function StarField() {
             height: `${star.size}px`,
           }}
           animate={{
-            opacity: [0.15, 0.8, 0.15],
+            opacity: [0.08, 0.7, 0.08],
             scale: [0.8, 1.4, 0.8],
           }}
           transition={{

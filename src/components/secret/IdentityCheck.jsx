@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
+import StarField from "../layout/StarField"
 
 function IdentityCheck({ onCorrect, onIncorrect }) {
   const [answer, setAnswer] = useState("")
@@ -31,6 +32,7 @@ function IdentityCheck({ onCorrect, onIncorrect }) {
         text-white
       "
     >
+      <StarField />
       {/* Purple atmosphere */}
       <div
         className="

@@ -11,7 +11,6 @@ function FinalMessage() {
         items-center
         justify-center
         overflow-hidden
-        bg-[#050308]
         px-6
         py-28
         text-center

@@ -1,9 +1,20 @@
 import { motion } from "framer-motion"
+import { useEffect } from "react"
+import StarField from "../layout/StarField"
 
 function SecretPage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    })
+  }, [])
+
   return (
     <main className="relative min-h-[100svh] overflow-hidden bg-[#050308] px-6 text-white">
       {/* Soft purple atmosphere */}
+      <StarField />
       <div
         className="
           pointer-events-none
@@ -22,8 +33,8 @@ function SecretPage() {
         "
       />
 
-      <section className="relative z-10 flex min-h-[100svh] items-center justify-center py-16 sm:py-20">
-        <div className="w-full max-w-2xl">
+      <section className="relative z-10 min-h-[100svh] py-16 sm:py-20">
+        <div className="mx-auto w-full max-w-2xl">
 
           {/* Top symbol */}
           <motion.div
@@ -227,6 +238,24 @@ function SecretPage() {
               >
                 Aliyah 🙈❤️
               </p>
+
+              {/* P.S. */}
+              <div className="mt-8 border-t border-purple-400/[0.06] pt-7">
+                <p className="font-serif text-sm leading-8 text-white/45 sm:text-base sm:leading-9">
+                  <span className="text-purple-300/70">P.S.</span>{" "}
+                  I was just rounding this up when you told me about
+                  the websites. I almost did not finish it beause I actually thought this would be your first but Odun
+                  and Muizz'ah wanted to cut off my head because they
+                  have not rested since I started and we did the
+                  countdown together. So if you are reading this that
+                  means I finish and sent it.
+                </p>
+
+                <p className="mt-5 font-serif text-sm leading-8 text-white/45 sm:text-base sm:leading-9">
+                  As the broke friend that I am this is what I have. <br />
+                  Happy Birthdayyyyyyyyyyyyyyyyyyyyyy 💜
+                </p>
+              </div>
             </div>
           </motion.article>
         </div>
